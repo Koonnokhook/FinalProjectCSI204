@@ -20,12 +20,77 @@ header{
     color:rgb(255, 255, 255);
 }
 
-nav{
+
+.container {
+    padding-top: 30px;
+    max-width: 100%; /* Set the maximum width to 397px */
+    max-height: 60%;
+    text-align: center;
+}
+
+.slider-wrapper {
+position: relative;
+max-width: 100%; /* Set the maximum width to 397px */
+max-height: 60%; /* Set the maximum height to 90px */
+margin: 0 auto;
+overflow: hidden; /* Hide any content that exceeds the maximum size */
+}
+
+.slider {
+display: flex;
+aspect-ratio: 16 / 9;
+overflow-x: auto;
+scroll-snap-type: x mandatory;
+scroll-behavior: smooth;
+box-shadow: 0 1.5rem 3rem -0.75rem hsla(0, 0%, 0%, 0.25);
+border-radius: 0.5rem;
+-ms-overflow-style: none; /* Hide scrollbar IE and Edge */
+scrollbar-width: none; /* Hide scrollbar Firefox */
+max-width: 100%; /* Set the maximum width to 397px */
+max-height: 60%; /* Set the maximum height to 90px */
+}
+
+/* Hide scrollbar for Chrome, Safari, and Opera */
+.slider::-webkit-scrollbar {
+display: none;
+}
+
+.slider img {
+flex: 1 0 100%;
+scroll-snap-align: start;
+object-fit: cover;
+}
+
+.slider-nav {
+display: flex;
+column-gap: 1rem;
+position: absolute;
+bottom: 1.25rem;
+left: 50%;
+transform: translateX(-50%);
+z-index: 1;
+}
+
+.slider-nav a {
+width: 0.5rem;
+height: 0.5rem;
+border-radius: 50%;
+background-color: #fff;
+opacity: 0.75;
+}
+
+nav div{
     background-color: #cac4c4; 
     padding-top: 30px;
     padding-bottom: 30px;
     font-size: 20px;
+    align-items: left;
+    text-decoration: none;
     color:rgb(33, 11, 161);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
 
 }
 
