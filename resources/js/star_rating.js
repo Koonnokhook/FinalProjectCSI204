@@ -1,12 +1,14 @@
 const stars = document.querySelectorAll('.star');
 const averageRating = document.getElementById('average');
 
-let currentRating = 0;
+let ratings = [];
 
 // Add click event listeners to each star
 stars.forEach(star => {
   star.addEventListener('click', () => {
     const rating = parseInt(star.getAttribute('data-rating'));
+
+    ratings.push(rating);
 
     // Reset all stars to their default color
     stars.forEach(s => {
