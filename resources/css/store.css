@@ -85,7 +85,7 @@ p {
   justify-content: space-around;
 }
 
-.container .item1 .star-rating
+.container .item1 .star-rating input
 {
   display: none;
 }
@@ -94,6 +94,7 @@ p {
 
   font-size: 40px;
   color:#444;
+  padding: 10px;
 }
 .slider-wrapper {
   position: relative;
