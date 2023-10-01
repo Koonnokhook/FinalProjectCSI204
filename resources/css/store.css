@@ -6,14 +6,6 @@ p {
   font-size: 24px;
 }
 
-.star {
-  font-size: 24px;
-  cursor: pointer;
-}
-
-.star:hover {
-  color: gold;
-}
 
 .container {
   display: flex;
@@ -85,7 +77,6 @@ p {
 
 .container1 {
   max-width: 710px;
-  /* Set the maximum width to 397px */
   max-height: 582px;
   text-align: center;
   display: flex;
@@ -94,15 +85,22 @@ p {
   justify-content: space-around;
 }
 
+.container .item1 .star-rating
+{
+  display: none;
+}
+
+.star-rating label{
+
+  font-size: 40px;
+  color:#444;
+}
 .slider-wrapper {
   position: relative;
   max-width: 710px;
-  /* Set the maximum width to 397px */
   max-height: 582px;
-  /* Set the maximum height to 90px */
   margin: 0 auto;
   overflow: hidden;
-  /* Hide any content that exceeds the maximum size */
 }
 
 .slider {
