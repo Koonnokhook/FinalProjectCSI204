@@ -3,6 +3,12 @@ const averageRating = document.getElementById('average');
 
 let ratings = [];
 
+if(localStorage.getItem("ratings"))
+{
+
+  ratings =JSON.parse(localStorage.getItem("ratings"));
+}
+
 // Add click event listeners to each star
 stars.forEach(star => {
   star.addEventListener('click', () => {
