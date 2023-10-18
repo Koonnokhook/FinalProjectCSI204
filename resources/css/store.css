@@ -1,5 +1,6 @@
 * {
   box-sizing: border-box;
+  
 }
 
 p {
@@ -12,7 +13,7 @@ p {
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background: #0BDA51;
+  background: #c5c7e7;
   padding: .5em;
 
 }
@@ -30,10 +31,8 @@ p {
 
 .item2 {
   gap: 10px;
-  max-height: 50%;
-  min-height: 50%;
+  height: 100%;
   max-width: 50vw;
-  background: #0BDA51;
   padding: .5em;
   overflow: hidden;
   display: flex;
@@ -85,17 +84,7 @@ p {
   justify-content: space-around;
 }
 
-.container .item1 .star-rating input
-{
-  display: none;
-}
 
-.star-rating label{
-
-  font-size: 40px;
-  color:#444;
-  padding: 10px;
-}
 .slider-wrapper {
   position: relative;
   max-width: 710px;
@@ -181,7 +170,6 @@ nav div {
   justify-content: space-around;
 
 }
-
 
 footer {
   background-color: #666;
