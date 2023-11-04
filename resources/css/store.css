@@ -7,13 +7,40 @@ p {
   font-size: 24px;
 }
 
+.container2 .rating {
+  direction:rtl;
+}
+
+.container2 .rating label {
+  display: inline-block;
+  cursor: pointer;
+  color: #ebebeb;
+}
+
+.container2 .rating label i {
+  font-size: 2rem;
+  transition: 0.1s ease-in;
+}
+
+.container2 .rating label:hover i, 
+.container2 .rating label:hover ~ label i{
+  color: #ffea4e;
+}
+
+.container .rating .rating-radio{
+  display: none;
+}
+
+.container .rating input[type="radio"]:checked + label i,
+.container .rating input[type="radio"]:checked ~ label i{
+  color: #ffea4e;
+}
 
 .container {
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  background: #c5c7e7;
   padding: .5em;
 
 }

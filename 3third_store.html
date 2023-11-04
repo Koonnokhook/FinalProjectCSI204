@@ -1,95 +1,114 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title>Index</title>
-    <h4>Food Collection</h4>
-    <link rel="stylesheet" href="./resources/css/store.css">
-  </head>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="./resources/css/store.css">
+  <title>First store</title>
 
-  <nav>
-    <div>
-      <a href="index.html" class="w3-button w3-block w3-black">Index</a>
-      <a href="1first_store.html" class=" w3-button w3-block w3-black">First Store 1</a>
-      <a href="2second_store.html" class=" w3-button w3-block w3-black" >First Store 2</a>
-      <a href="3third_store.html" class="w3-button w3-block w3-black">First Store 3</a>
-      <a href="4fourth_store.html" class="w3-button w3-block w3-black">First Store 4</a>
-    </div>
-  </nav>
-  
-  <body>
-    
-    <div class="container">
+</head>
+<body>
+
+  <main>
+    <section class="container">
       <div class="item1">
-          <h2>About</h2>
-          <h3>(ชื่อร้าน)</h3>
-          <p>(หมวดหมู่)</p>
-          <p>(ให้ดาว)</p>
-          <p>(เส้นทาง)</p>
-          <p>(ช่องทางติดต่อ)</p>
-          <p>....................................</p>
-      </div>
-    
-    <div class="item2">   
-        <h2>Image</h2>
-        <p>(ภาพ)</p>
-        <p>....................................</p>
+        <h3>ข้าวกะเตี๋ยว</h3>
+        <p>อาหารตามสั่ง</p>
+        <div class="container2">
+          <div class="rating">
 
-    </div>
-  </div>
+            <input type="radio" name="rating" id="star-1" class="rating-radio" value="1">
+            <label for="star-1"><i class="fa-solid fa-star"></i></label>
+            
+            <input type="radio" name="rating" id="star-2" class="rating-radio" value="2">
+            <label for="star-2"><i class="fa-solid fa-star"></i></label>
+            
+            <input type="radio" name="rating" id="star-3" class="rating-radio" value="3">
+            <label for="star-3"><i class="fa-solid fa-star"></i></label>
+            
+            <input type="radio" name="rating" id="star-4" class="rating-radio" value="4">
+            <label for="star-4"><i class="fa-solid fa-star"></i></label>
+            
+            <input type="radio" name="rating" id="star-5" class="rating-radio" value="5">
+            <label for="star-5"><i class="fa-solid fa-star"></i></label>
+            
+          </div>
+  
+          <p>(ช่องทางติดต่อ)</p>
+          <p>เส้นทาง</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!3m2!1sth!2sth!4v1695840863411!5m2!1sth!2sth!6m8!1m7!1sghjQx1Wbeit5xD8_yNbhnA!2m2!1d13.85679587310616!2d100.5859417223938!3f135.89066275849183!4f-17.320694645089972!5f0.7820865974627469" width="100%" height="400" style="border: 0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+
+      <div class="item2">
+        <h2 class="imgName">Image</h2>
+        <div class="slider-wrapper">
+          <div class="slider">
+            <img id="slide-1" src="https://images.unsplash.com/photo-1656464868371-602be27fd4c2?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="3D rendering of an imaginary orange planet in space" />
+            <img id="slide-2" src="https://images.unsplash.com/photo-1657586640569-4a3d4577328c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1200&q=80" alt="3D rendering of an imaginary green planet in space" />
+            <img id="slide-3" src="https://images.unsplash.com/photo-1656077217715-bdaeb06bd01f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto.format&fit=crop&w=1200&q=80" alt="3D rendering of an imaginary blue planet in space" />
+          </div>
+          <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+          </div>
+        </div>
+      </div>
+    </section>
 
     <section class="Recommend">
-        <h2>Recommend</h2>
-        <div class="flexbox">
-            <div class="item">
-              <div class="content">
-                <p>11111</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="content">
-                <p>22222</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="content">
-                <p>33333</p>
-              </div>
-            </div>
-            <div class="item">
-              <div class="content">
-                <p>44444</p>
-              </div>
-            </div>
+      <h2>Recommend</h2>
+      <div class="flexbox">
+        <div class="item">
+          <div class="content">
+            <p>11111</p>
           </div>
+        </div>
+        <div class="item">
+          <div class="content">
+            <p>22222</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content">
+            <p>33333</p>
+          </div>
+        </div>
+        <div class="item">
+          <div class="content">
+            <p>44444</p>
+          </div>
+        </div>
+      </div>
     </section>
-    
-    <h2>Menu</h2>
 
-    <div class="container">
-
-      <div class="item">
-        <p> ชื่อ</p>
-        <p> ชื่อ</p>
-        <p> ชื่อ</p>
-        <p> ชื่อ</p>
-        <p> ชื่อ</p>
-        <p> ชื่อ</p>
-
+    <section class="menu">
+      <h2>Menu</h2>
+      <div class="container">
+        <div class="item">
+          <ul>
+            <li><p>ชื่ออาหาร</p></li>
+            <li><p>ชื่ออาหาร</p></li>
+            <li><p>ชื่ออาหาร</p></li>
+            <li><p>ชื่ออาหาร</p></li>
+            <li><p>ชื่ออาหาร</p></li>
+            <li><p>ชื่ออาหาร</p></li>
+          </ul>
+        </div>
+        <div class="item">
+          <p>ราคา</p>
+          <p>ราคา</p>
+          <p>ราคา</p>
+          <p>ราคา</p>
+          <p>ราคา</p>
+          <p>ราคา</p>
+        </div>
       </div>
-
-      <div class="item">
-        <p>ราคา </p>
-        <p>ราคา </p>
-        <p>ราคา </p>
-        <p>ราคา </p>
-        <p>ราคา </p>
-        <p>ราคา </p>
-      </div>
-    </div>
-
-  </body>
-  <footer>
-    <p>ข้อมูลทุกอย่างได้รับการอนุญาตให้เก็บข้อมูล</p>
-    <p>หน้าเว็บนี้เป็นโปรเจคของรายวิชา CSI204</p>
-    </footer>
+    </section>
+  </main>
+</body>
 </html>
+
+

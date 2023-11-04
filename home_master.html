@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Index</title>
+  <link rel="stylesheet" href="./resources/css/index.css">
+
+</head>
+
+<body>
+
+  <section class="container2">
+      <div class="item1">
+        <img src="./resources/images/Sriphelin-logov1@4x.png" alt="Logo" style="height: 100px; width: 100px;">
+      </div>
+
+          <div class="item2">
+            <h4>Food Collection</h4>
+          </div>  
+      </div>
+  </section>
+  
+  
+  <nav>
+    <div>
+      <a href="#" class="w3-button w3-block w3-black" onclick="navigateTo('1first_store.html')">Store 1</a>
+      <a href="#" class="w3-button w3-block w3-black" onclick="navigateTo('2second_store.html')">Store 2</a>
+      <a href="#" class="w3-button w3-block w3-black" onclick="navigateTo('3third_store.html')">Store 3</a>
+      <a href="#" class="w3-button w3-block w3-black" onclick="navigateTo('4fourth_store.html')">Store 4</a>
+      <a href="#" class="w3-button w3-block w3-black" onclick="navigateTo('Recommend.html')">Recommend another</a>
+    </div>
+  </nav>
+
+  <iframe id="displayPage" src="./index.html" style="width: 100%; height: 800px;"></iframe>
+
+</body>
+<footer>
+  <p>ข้อมูลทุกอย่างได้รับการอนุญาตให้เก็บข้อมูล</p>
+  <p>หน้าเว็บนี้เป็นโปรเจคของรายวิชา CSI204</p>
+</footer>
+<script>
+  const navigateTo = (page) => {
+    document.getElementById('displayPage').src = page;
+  }
+</script>
+</html>
