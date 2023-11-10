@@ -42,7 +42,8 @@ p {
   align-items: center;
   justify-content: space-around;
   padding: .5em;
-
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(190, 186, 186, 0.69);
 }
 
 .item1 {
