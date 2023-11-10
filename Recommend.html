@@ -4,31 +4,39 @@
 <head>
     <title>School of Information Technology</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+Thai+Looped:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./resources/css/store.css">
+    <link rel="stylesheet" href="./resources/css/recommend.css">
+    <script src="./resources/js/Google Sheet.js"></script>
 </head>
 
 <body>
     <div class="row" style="height: 670px; width:100%; padding: 50px;  ">
-        <form id="resForm1" class="col">
+        <form method="post" id="resForm1" class="col" action="https://script.google.com/macros/s/AKfycbw7UGMuMupMHj4Fi9rBRtBi9dqV_ojcUH2qbhF_EH4RleuQzSHau46_lrRaIPZKFzjX/exec">
             <div>
                 <p>ฟอร์มกรอกข้อมูลร้านอาหาร</p>
                 <div class="row">
                     <span class="col-md-6">
-                        <input id="txtName" type="text" class="form-control" placeholder="กรุณากรอกชื่อร้านอาหาร" required />
+                        <input id="txtName" type="text" name="your-name" class="form-control" placeholder="กรุณากรอกชื่อร้านอาหาร" required />
                     </span>
                     <span class="col-md-6">
-                        <input id="txtTel" type="text" class="form-control" placeholder="หมายเลขติดต่อโทรศัพท์" required />
+                        <input id="txtTel" type="text" name="your-telephone" class="form-control" placeholder="หมายเลขติดต่อโทรศัพท์" required />
                     </span>
                 </div>
             </div>
             <div style="margin-top: 10px;">
                 <p>ที่อยู่ร้านอาหาร</p>
-                <textarea id="txtAddress" class="form-control" rows="4" cols="50" required></textarea>
+                <textarea id="txtAddress" name="your-address" class="form-control" rows="4" cols="50" required></textarea>
             </div>
             <div style="margin-top: 10px;">
                 <p>รีวิวแบบย่อ</p>
-                <textarea id="txtReview" class="form-control" rows="4" cols="50" required></textarea>
+                <textarea id="txtReview" name="your-review" class="form-control" rows="4" cols="50" required></textarea>
             </div>
+
             <div style="padding: 20px;">
+                <input type="submit" value="Submit" id="submit" class="button btn-primary">
                 <button onclick="formChecker();" type="button" class="btn btn-success">ส่งข้อมูล</button>
                 <button onclick="showData();" type="button" class="btn btn-warning">แสดงข้อมูล</button>
             </div>
@@ -39,7 +47,7 @@
                 <p>แสดงฟอร์มกรอกข้อมูลร้านอาหาร</p>
                 <div class="row">
                     <span class="col-md-6">
-                        <input id="txtDisplayName" type="text" class="form-control" placeholder="ชื่อร้านอาหาร" readonly />
+                        <input id="txtDisplayName"  type="text" class="form-control" placeholder="ชื่อร้านอาหาร" readonly />
                     </span>
                     <span class="col-md-6">
                         <input id="txtDisplayTel" type="text" class="form-control" placeholder="หมายเลขติดต่อโทรศัพท์" readonly />
@@ -59,7 +67,6 @@
             </div>
         </form>
     </div>
-</body>
 
 <script>
     const form1 = document.getElementById('resForm1');
